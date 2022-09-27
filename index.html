@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoPrueba</title>
+    <link rel="icon" type="image/svg" href="icono.svg" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="fila">
+      <ul class="listado">
+        <li><a class="botones" id="M1" href="#P_Giza" data-toggle="tab">Piramide de Giza</a></li>
+        <li><a class="botones" id="M2" href="#JC_Babilonia" data-toggle="tab">Jardines colgantes de Babilonia</a></li>
+        <li><a class="botones" id="M3" href="#T_Artemisa" data-toggle="tab">Templo de Artemisa</a></li>
+        <li><a class="botones" id="M4" href="#EZ_Olimpia" data-toggle="tab">Estatua de Zeus en Olimpia</a></li>
+        <li><a class="botones" id="M5" href="#M_Alicarnazo" data-toggle="tab">Mausoleo de Halicarnazo</a></li>
+        <li><a class="botones" id="M6" href="#C_Rodas" data-toggle="tab">Coloso de Rodas</a></li>
+        <li><a class="botones" id="M7" href="#F_Alejandria" data-toggle="tab">Faro de Alejandria</a></li>
+      </ul>
+      <div id="map"></div>
+    </section>
+    <footer>
+      <p>
+        Georreferenciamiento de maravillas del mundo antigüo para fines de prueba.
+      </p>
+    </footer>
+  </body>
+    
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz4-U7lbmF9i9QukF10IgzrBLPPZXOBl0&laguage=es-419&callback=initMap"
+    ></script>
+
+<script src="georeferencia.js"></script>
+  </body>
+</html>

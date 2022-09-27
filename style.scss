@@ -1,0 +1,83 @@
+$color1: #24273f;
+$color2: #2e304f;
+$color3: #d8dbe2;
+
+body {
+    background-color: $color1;
+}
+
+.fila {
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listado {
+    height: 70vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    padding: 0.2rem;
+    background-color: $color2;
+    margin: 0.1rem;
+    color: $color3;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        height: 2.5rem;
+    }
+}
+
+a:hover {
+    background-color: $color3;
+    color: #2e304f;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#map {
+    width: 100%;
+    height: 60vh;
+    // background-color: $color2;
+    border-radius: 0.5rem;
+    margin: 1rem;
+
+    @media screen and (min-width: 768px) {
+        width: 70vw;
+        height: 80vh;
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: $color3;
+}
